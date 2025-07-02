@@ -1,7 +1,6 @@
 import React from 'react'
-import App from '../App';
 
-const Personal = ({data,setData,errors}) => {
+const Personal = ({data,setData,errors }) => {
    const handleChange = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
     console.log(data);

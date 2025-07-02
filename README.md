@@ -1,12 +1,46 @@
-# React + Vite
+# 📋 Multi-Step Form with React
+Live Link:-https://loginshub.netlify.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive multi-step form built using **React.js** and **Tailwind CSS**, demonstrating React state management, form validation, navigation controls, local storage persistence, and responsive design principles.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Objective
 
-## Expanding the ESLint configuration
+This project fulfills the following requirements:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Three-step form flow:**
+  1. Personal Information (Name, Email, Phone)
+  2. Address Information (Address Line 1, Address Line 2, City, State, Zip Code)
+  3. Confirmation (Review entered data)
+- Sequential completion enforced through navigation controls
+- Client-side validation of all required fields and correct formats (e.g., email)
+- Data persistence in **localStorage**
+- Fully responsive design
+
+---
+
+## 🛠️ Technologies Used
+
+- **React.js** (Functional Components & Hooks)
+- **Tailwind CSS**
+- **Local Storage API**
+
+---
+
+✨ Features
+✅ Multi-step form navigation with Back/Next/Submit
+✅ Field validation and error highlighting
+✅ Automatic persistence in local storage when navigating between steps or refreshing the page
+✅ Retrieval and pre-filling of saved data on revisit
+✅ Mobile-first responsive design using Tailwind CSS
+
+🙋‍♂️ Contact
+If you have any questions or need help:
+
+Your Name: Shubham Singh
+
+Email: shubhamhai593@gmail.com
+
+GitHub: singhshubham593
+

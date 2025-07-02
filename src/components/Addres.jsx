@@ -72,7 +72,7 @@ const Addres = ({data,setData,errors}) => {
               }`}
             />
             {errors.state && (
-              <p className="text-red-500 text-sm">{errors.state} Hello</p>
+              <p className="text-red-500 text-sm">{errors.state} </p>
             )}
           </div>
           <div className="p-4">
@@ -90,7 +90,7 @@ const Addres = ({data,setData,errors}) => {
               }`}
             />
             {errors.zip && (
-              <p className="text-red-500 text-sm">{errors.zip} Hello</p>
+              <p className="text-red-500 text-sm">{errors.zip}</p>
             )}
           </div>
         </div>

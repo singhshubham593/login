@@ -22,15 +22,15 @@ function App() {
   const valide = () => {
     const Errorfo = {};
     if (step === 1) {
-      if (!data.name) Errorfo.name = "Required Name";
-      if (!data.email) Errorfo.email = "Required Email";
-      if (!data.phone) Errorfo.phone = "Required Phone no";
+      if (!data.name) Errorfo.name = "Please Enter Name";
+      if (!data.email) Errorfo.email = "Please Enter Email";
+      if (!data.phone) Errorfo.phone = "Please Enter Phone no";
     }
     if (step === 2) {
-      if (!data.address1) Errorfo.address1 = "Required address";
-      if (!data.city) Errorfo.city = "Required city";
-      if (!data.state) Errorfo.state = "Required State";
-      if (!data.zip) Errorfo.zip = "Required zip";
+      if (!data.address1) Errorfo.address1 = "Please Enter address";
+      if (!data.city) Errorfo.city = "Please Enter city";
+      if (!data.state) Errorfo.state = "Please Enter State";
+      if (!data.zip) Errorfo.zip = "Please Enter Code";
     }
     setErrors(Errorfo);
     return Object.keys(Errorfo).length === 0;

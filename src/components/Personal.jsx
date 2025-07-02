@@ -22,7 +22,7 @@ const Personal = ({data,setData,errors }) => {
               }`}
             />
             {errors.name && (
-              <p className="text-red-500 text-sm">{errors.name}Hello</p>
+              <p className="text-red-500 text-sm">{errors.name}</p>
             )}
           </div>
 
@@ -41,7 +41,7 @@ const Personal = ({data,setData,errors }) => {
               }`}
             />
             {errors.email && (
-              <p className="text-red-500 text-sm">{errors.email} Hello</p>
+              <p className="text-red-500 text-sm">{errors.email} </p>
             )}
           </div>
           <div className="p-4">

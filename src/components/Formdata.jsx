@@ -10,17 +10,7 @@ const Formdata = ({data}) => {
               {value || "Enter Data"}
             </p>
           ))}
-          {/* <div className='flex flex-col'>
-          <h2> "Name :" {data.name},</h2>
-        <h3>"Name :" {data.name},</h3>
-        <h3></h3>"Email :" {data.email},
-        <h3></h3>"Phone No :" {data.phone},
-        "Address 1 :" {data.address1},
-        "Address 2 :" {data.address2},
-        "City :" {data.city},
-        "State :" {data.state},
-        "Code :" {data.zip},
-        </div> */}
+          
     </div>
   )
 }

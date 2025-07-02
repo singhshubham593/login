@@ -37,19 +37,16 @@ function App() {
   };
 
   useEffect(() => {
-    const saved = localStorage.getItem("multiStepFormData");
+    const saved = localStorage.getItem("multiFormData");
     if (saved) setData(JSON.parse(saved));
   }, []);
 
-  // Save to local storage
+  
   useEffect(() => {
-    localStorage.setItem("multiStepFormData", JSON.stringify(data));
+    localStorage.setItem("multiStepData", JSON.stringify(data));
   }, [data]);
 
-  // const handleChange = (e) => {
-  //   setData({ ...data, [e.target.name]: e.target.value });
-  //   console.log(data);
-  // };
+ 
   const nextMove = () => {
     if (valide() && step < 3) {
       setStep(step + 1);
@@ -65,7 +62,7 @@ function App() {
 
   const handleSubmit = () => {
     if (valide()) {
-      localStorage.removeItem("multiStepFormData");
+      localStorage.removeItem("multiStepData");
       setData({
         name: "",
         email: "",
@@ -79,11 +76,9 @@ function App() {
       setStep(1);
     }
   };
-  console.log(errors);
-  console.log(errors.name);
   return (
     <div className="max-w-xl mx-auto p-4">
-      <h1 className="text-2xl font-bold text-center">Heading</h1>
+      <h1 className="text-2xl font-bold text-center mb-2">Login Form</h1>
 
       <div className="flex justify-between mb-4">
         {[1, 2, 3].map((s) => (
